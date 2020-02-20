@@ -31,7 +31,7 @@ class ConvertNumber
 
     public static function getDefaultLanguage()
     {
-        return config("n2w.default-language");
+        return config("n2w.default-language") != null ? config("n2w.default-language") : "sw";
     }
 
     public static function getSupportedLanguages()
