@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Zakayo\Haule\Converters;
+namespace ZakayoHaule\N2W\Converters;
 
 
 class EnglishConverter
