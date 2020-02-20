@@ -1,6 +1,6 @@
 {
-    "name": "zakayo.haule/n2w",
-    "description": "Convert number to words in different langauges",
+    "name": "zakayohaule/multi-language-number-to-words",
+    "description": "Convert number to words in different languages",
     "type": "library",
     "authors": [
         {
