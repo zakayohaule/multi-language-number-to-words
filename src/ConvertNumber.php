@@ -13,7 +13,7 @@ class ConvertNumber
     {
     }
 
-    public static function convert($number, $lang)
+    public static function convert($number, $lang=null)
     {
         if (!in_array($lang, self::getSupportedLanguages())  && $lang != null){
             throw new \Exception("Unsupported language");
