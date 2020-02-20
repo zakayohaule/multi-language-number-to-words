@@ -14,5 +14,12 @@
         "psr-4": {
             "ZakayoHaule\\N2W\\" : "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ZakayoHaule\\N2W\\N2WServiceProvider"
+            ]
+        }
     }
 }
