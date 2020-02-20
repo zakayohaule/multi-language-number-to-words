@@ -15,11 +15,10 @@ class ConvertNumber
 
     public static function convert($number, $lang)
     {
-        if (!in_array($lang, self::getSupportedLanguages())){
+        if (!in_array($lang, self::getSupportedLanguages())  && $lang != null){
             throw new \Exception("Unsupported language");
         }
-
-        if ($lang == null) {
+        elseif ($lang == null) {
             $lang = self::getDefaultLanguage();
         }
 
@@ -39,7 +38,7 @@ class ConvertNumber
     {
         return [
           "sw",
-          "ne"
+          "en"
         ];
     }
 }
