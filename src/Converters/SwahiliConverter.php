@@ -68,10 +68,10 @@ class SwahiliConverter
             $words .= self::getThousandsToWords($number[0]);
             if (self::hasAllTrailingZeros($number)) {
                 return $words;
-            } elseif ($number[1] != 0) {
+            } elseif ($number[-3] == 0) {
                 $words .= " na ";
             } else {
-                $words .= ", ";
+                $words .= " ";
             }
             self::processHundreds(substr($number, 1), $words);
         }
@@ -89,7 +89,7 @@ class SwahiliConverter
             } else if (self::needsSpecialFormat($number) || $number[-3] == 0)
                 $words .= " na ";
             else {
-                $words .= ", ";
+                $words .= " ";
             }
             self::processHundreds(substr($number, -3), $words);
         }
